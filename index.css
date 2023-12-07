@@ -10,6 +10,7 @@ body {
 }
 .logo {
     padding: 12px;
+ 
 }
 .search-form{
     display: flex;
@@ -18,8 +19,10 @@ body {
 }
 .hotline {
     display: flex;
-    padding-right: 12px;
+    
 }
+
+
 input {
     border-radius: 10px; 
     padding: 8px;
@@ -40,12 +43,14 @@ input {
  } 
  .hotline-icon{
     padding: 16px;
-    width: 36px;
-    height: 36px;
+    width: 20px;
+    height: 20px;
+    
  }
  .hotline-text{
     font-size: 16px;
-    letter-spacing : 0px
+    letter-spacing : 0px;
+    margin-top: 16px;
  }
  .authentication {
  display: flex;
@@ -72,7 +77,6 @@ input {
     list-style: none;
     font-size: 16px;
  }
-
     
 
  ul > li > a:hover {
@@ -106,4 +110,183 @@ input {
     margin: 0;
     padding: 0;
   }
+ .content-header {
+   margin: 10px ;
+   background-color: #b5e4f2;
+   padding: 10px;
+   text-align: center;
+   border-radius: 10px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-weight: 900;
+   
+ } 
+ .content-container {
+
+   display: grid;
+   column-gap: 20px;
+   grid-template-columns: auto auto auto auto;
+   padding: 10px;
+   margin-left: 50px;
+   margin-right: 50px;
+   
+ }
+.grid-item {
+   font-size: 12px;
+   text-align: center;
+   padding-bottom: 30px;
+   background-color: #e2e2e2;
+   border-radius: 10px ;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+
+ }
+ .grid-item > img  {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+ }
+ .new-container {
+   display: grid;
+   column-gap: 20px;
+   grid-template-columns: 2fr 1fr ;
+   grid-template-rows: repeat(3 1fr);
+   margin: 30px;
   
+}
+.new-container  img {
+   max-width: 100%;
+   max-height: 100%;
+ }
+ 
+.title-news {
+   text-align: center;
+   margin: 20px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-weight: 900;
+}
+.img-b {
+   grid-row-start: 1;
+   grid-row-end: span 3;
+}
+.title-shoptype-small {
+   margin-bottom: 10px;
+   text-align: center;
+   font-size: 15px;
+
+}
+.item-size {
+  width: 30px;
+  height: 35px;
+}
+.policy_item {
+   display: flex;
+   align-items: center;
+   padding-left: 16px;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+   gap : 20px;
+   color: #003889;
+   flex: 1;
+   margin: 20px;
+}
+.text-item {
+   padding: 10px 0;
+   
+}
+.policy-section {
+   display: flex;
+  margin-bottom: 30px;
+}
+.footer {
+   display: flex;
+   background-color: #93cfeb !important;
+}
+.Information-footer {
+   font-size: 16px;
+   margin-right: auto;
+   margin-left: auto;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 10px;
+}
+.Information-footer p {
+   padding: 5px 0; 
+ }
+ @media (max-width: 768px) {
+   .menu li{
+      font-size: 10px;
+   }
+   .menu-sp:hover > .child-menu {
+      display: none;
+   }
+   .flex-container {
+     flex-direction: column;
+   }
+   .authentication {
+      display: none;
+   }
+ 
+   .logo,
+   .search-form,
+   .hotline,
+   .authentication,
+   .menu {
+     width: 100%;
+     padding: 10px;
+     text-align: center ;
+   }
+ 
+   .search-form{
+      display: none;
+   }
+ 
+   .search-icon {
+     position: static;
+     margin-top: 10px;
+   }
+ 
+   .child-menu {
+     position: static;
+     width: 100%;
+   }
+ 
+   .content-container {
+     grid-template-columns: 1fr;
+   }
+ 
+   .grid-item {
+     margin: 10px;
+   }
+ 
+   .new-container {
+     grid-template-columns: 1fr;
+     margin: 10px;
+   }
+  .logo img {
+   width: 40px;
+   height: 40px;
+  }
+
+p {
+   font-size: 10px;
+}
+.policy-section {
+   display: block;
+ }
+}
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   p  {
+      font-size: 12px;
+   }
+   .authentication 
+   {
+      display: none;
+   }
+   .shopping-icon {
+      margin-left: 10px;
+   }
+ }
+ 
