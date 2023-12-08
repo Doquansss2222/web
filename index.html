@@ -58,6 +58,9 @@
         <li><a href="">Home</a></li>
         <li class="menu-sp"><a href="">Sản phẩm</a>
          <ul class="child-menu">
+                <li  class="spbc" ><a href="" class="spbc">Sản phẩm bán chạy</a></li>
+                <li class="spyt"><a href="" class="spyt ">Sản phẩm yêu thích</a></li>
+                <li class="tt"><a href="" class="tt" >Tin tức</a></li>
                 <li><a href="">Dây chuyền</a></li>
                 <li><a href="">Lắc tay</a></li>
                 <li><a href="">Khuyên tai</a></li>
@@ -81,7 +84,7 @@
         <div class="content-header">
             <p>Top sản phẩm bán chạy</p>
         </div>
-        <div class="content-container">  
+        <div class="content-container " id="content1">  
            <div class="grid-item">
             <img src="images/Bong-tai-bac-Y-S925-nu-ma-bach-kim-dinh-da-CZ-hinh-trai-tim-LILI_991582_10.jpg" alt="">
             <p>Bông Tai Bạc Ý S925 Nữ Mạ Bạch Kim</p>
@@ -119,7 +122,7 @@
         <div class="content-header">
             <p>Sản phẩm yêu thích</p>
         </div>
-        <div class="content-container">  
+        <div class="content-container" id="content2">  
             <div class="grid-item">
              <img src="images/a.jpg" alt="">
              <p>Lắc Tay Bạc Nữ Mạ Bạch Kim Đính Đá CZ</p>
@@ -205,7 +208,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+    <div class="footer">
            <div class="Information-footer">
             <p>
                 GỌI MUA HÀNG ( 8:00 - 21:00 )  </p>
@@ -229,12 +232,38 @@
 
 
 
-        </div>
-
-
     </div>
 
 
+    </div>
+    <script>
+        var content_head = document.querySelector('#content1'); 
+        var a = document.querySelector('.spbc');
+        
+        a.addEventListener("click", function(){
+            event.preventDefault();
+            content_head.scrollIntoView({ behavior: 'smooth' });
+        });
+
+
+        var content_head = document.querySelector('#content2');
+        var a = document.querySelector('.spyt');
+        
+        a.addEventListener("click", function(){
+            event.preventDefault();
+            content_head.scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        
+        var content_head = document.querySelector('.title-news');
+        var a = document.querySelector('.tt');
+        
+        a.addEventListener("click", function(){
+            event.preventDefault();
+            content_head.scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+ 
 
 
 
